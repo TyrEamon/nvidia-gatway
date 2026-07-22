@@ -1,4 +1,4 @@
-name = "nvidia-gateway"
+name = "nvidia-gatway"
 main = "src/index.ts"
 compatibility_date = "2025-07-01"
 compatibility_flags = ["nodejs_compat"]
