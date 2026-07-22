@@ -1,14 +1,17 @@
-name = "nvidia-gateway"
+name = "nvidia-gatway"
 main = "src/index.ts"
 compatibility_date = "2025-07-01"
 compatibility_flags = ["nodejs_compat"]
 keep_vars = true
 
-# 必须先在 Cloudflare 创建 KV namespace，然后把下面这个 id 替换成自己的 KV namespace ID。
-# 不要直接部署占位符；不填真实 KV，后台配置和 API Key 都无法保存。
+# KV 绑定名必须保持为 KV。
+# 这里故意不写 id，Cloudflare Workers Builds / Wrangler 会在部署时自动创建并绑定 KV。
+# 如果你想手动使用已有 KV，也可以改成：
+# [[kv_namespaces]]
+# binding = "KV"
+# id = "你的 KV namespace ID"
 [[kv_namespaces]]
 binding = "KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
 
 # 管理后台账号密码建议在 Cloudflare Dashboard > Variables and Secrets 里设置：
 # ADMIN_USERNAME = "admin"
