@@ -8,7 +8,7 @@ keep_vars = true
 # 不要直接部署占位符；不填真实 KV，后台配置和 API Key 都无法保存。
 [[kv_namespaces]]
 binding = "KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "59e9b813637545d7abef22c029961bf0"
 
 # 管理后台账号密码建议在 Cloudflare Dashboard > Variables and Secrets 里设置：
 # ADMIN_USERNAME = "admin"
