@@ -1,0 +1,27 @@
+{
+  "name": "nvidia-gateway-cloudflare-template",
+  "version": "1.0.0",
+  "description": "Cloudflare Workers AI API Gateway",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --keep-vars",
+    "build": "wrangler deploy --dry-run --keep-vars"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "ai",
+    "proxy",
+    "api-gateway"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.12.27"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260702.1",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.107.0"
+  }
+}
